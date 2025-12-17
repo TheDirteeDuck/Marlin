@@ -23,3 +23,11 @@ jobs:
       - name: Build Ender 3 (4.2.2)
         run: |
           platformio run -e STM32F103RE_creality
+          # Rename firmware to a standard name
+          mv .pio/build/STM32F103RE_creality/firmware-*.bin .pio/build/STM32F103RE_creality/firmware.bin
+
+      - name: Upload Firmware
+        uses: actions/upload-artifact@v3
+        with:
+          name: firmware
+          path: .pio/build/STM32F103RE_creality/firmware.bin
