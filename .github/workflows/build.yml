@@ -22,4 +22,4 @@ jobs:
 
       - name: Build Ender 3 (4.2.2)
         run: |
-          platformio run -e STM32F103RET6_creality
+          platformio run -e STM32F103RE_creality
