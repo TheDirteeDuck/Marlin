@@ -1,0 +1,32 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m3",
+    "extra_flags": "-DSTM32F103xC",
+    "f_cpu": "72000000L",
+    "mcu": "stm32f103rc",
+    "variant": "MARLIN_F103RC"
+  },
+  "connectivity": [
+    "serial"
+  ],
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "onboard_tools": [
+      "stlink"
+    ],
+    "openocd_target": "stm32f1x"
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "name": "Creality V4.2.2 (STM32F103RC) Custom",
+  "upload": {
+    "maximum_ram_size": 20480,
+    "maximum_size": 131072,
+    "protocol": "stlink"
+  },
+  "vendor": "Creality"
+}
