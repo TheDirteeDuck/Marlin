@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Ender 3 (4.2.2)
         run: |
-          platformio run -e STM32F103RE_creality
+          platformio run -e CREALITY_V422_CUSTOM
           mv .pio/build/STM32F103RE_creality/firmware-*.bin .pio/build/STM32F103RE_creality/firmware.bin
 
       - name: Upload Firmware
